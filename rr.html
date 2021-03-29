@@ -175,13 +175,13 @@ var i = buf.indexOf("\n");
 
 while (i>=0) {
   
-var filtered = buf.substr(0,i) * (butter_b[0]+data_previous[0]*butter_b[1]+data_previous[1]*butter_b[2]+data_previous[2]*butter_b[3]) / (butter_a[0]+data_previous[0]*butter_a[1]+data_previous[1]*butter_a[2]+data_previous[2]*butter_a[3]);
+//var filtered = buf.substr(0,i) * (butter_b[0]+data_previous[0]*butter_b[1]+data_previous[1]*butter_b[2]+data_previous[2]*butter_b[3]) / (butter_a[0]+data_previous[0]*butter_a[1]+data_previous[1]*butter_a[2]+data_previous[2]*butter_a[3]);
 
-data_previous = [data_previous[1], data_previous[2], filtered];
+//data_previous = [data_previous[1], data_previous[2], filtered];
   
-onLine(filtered);
+//onLine(filtered);
 
-//onLine(buf.substr(0,i));
+onLine(buf.substr(0,i));
 
 buf = buf.substr(i+1);
 
